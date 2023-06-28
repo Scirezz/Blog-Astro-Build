@@ -1,0 +1,55 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Definición"
+  p="La Sociedad de la Información se refiere a una etapa histórica en la que la información y el conocimiento se han convertido en recursos fundamentales para el desarrollo social, económico y cultural. En la Sociedad de la Información, la tecnología de la información desempeña un papel central."
+  p1="Esta tecnología incluye diversos aspectos, como las redes de comunicación, los dispositivos electrónicos, los sistemas de almacenamiento de datos y el software. Estos elementos permiten la creación, almacenamiento, procesamiento y difusión de información de manera rápida y eficiente."
+  color="black"
+  id="model-y"
+>
+  <div slot="footer" class="gap-x-6 flex mx-auto">
+    <a
+      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+      href="#hero-section"
+    >
+      Volver atrás</a
+    >
+    <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="#model-3"
+    >
+      Siguiente Sección</a
+    >
+  </div>
+
+  <img
+    slot="background"
+    alt="definicion"
+    class="h-full w-full object-cover object-center bg-image"
+    src="def.avif"
+    id="bg-image-modely"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  var imageElement = document.querySelector("#bg-image-modely") as HTMLImageElement;
+
+  if (isEdge()) {
+    imageElement.src = "def.webp";
+  } else {
+    imageElement.src = "def.avif";
+  }
+</script>

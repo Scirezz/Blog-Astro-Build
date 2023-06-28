@@ -1,0 +1,57 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Características"
+  p="1. Acceso a la información: Existe un acceso masivo a fuentes de información a través de internet y otras tecnologías, lo que rompe barreras geográficas y temporales. I"
+  p1="2. Interconexión: Las personas y las organizaciones están interconectadas en redes virtuales que fomentan la colaboración y el intercambio de conocimientos."
+  p2="3. Digitalización: Gran parte de la información se ha digitalizado, lo que permite su almacenamiento y procesamiento de manera eficiente."
+  p3="4. Velocidad y eficiencia: La transmisión y procesamiento de información se realiza de manera rápida y eficiente, lo que acelera los procesos y reduce las barreras de tiempo y distancia."
+  color="black"
+  id="model-s"
+>
+  <div slot="footer" class="gap-x-6 flex mx-auto">
+    <a
+      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+      href="#model-3"
+    >
+      Volver Atrás</a
+    >
+    <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="#model-x"
+    >
+      Siguiente Sección</a
+    >
+  </div>
+
+  <img
+    slot="background"
+    alt="Model S"
+    class="h-full w-full object-cover object-center"
+    src="model-s.avif"
+    id="bg-image-models"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  var imageElement = document.querySelector("#bg-image-models") as HTMLImageElement;
+
+  if (isEdge()) {
+    imageElement.src = "model-s.webp";
+  } else {
+    imageElement.src = "model-s.avif";
+  }
+</script>

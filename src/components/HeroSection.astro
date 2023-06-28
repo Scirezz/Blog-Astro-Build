@@ -1,0 +1,28 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section
+  title="Sociedad de la información"
+  subtitle="Christian López, Formación Crítica T4"
+  color="white"
+  id="hero-section"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#model-y"
+    >
+      Conozca más aquí</a
+    >
+  </div>
+
+  <video
+  slot="background"
+  class="object-center object-cover h-full w-full"
+  autoplay
+  muted
+  loop
+  src="/video.mp4"
+></video>
+</Section>

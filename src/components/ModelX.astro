@@ -1,0 +1,58 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Importancia"
+  subtitle="La Sociedad de la Información es de suma importancia en varios aspectos:"
+  p="Desarrollo económico: Facilita la creación de nuevas oportunidades de negocio y mejora la eficiencia de los procesos productivos."
+  p1="Participación ciudadana: Permite a las personas acceder a la información y participar activamente en la toma de decisiones a nivel político y social."
+  p2="Educación y aprendizaje: Ofrece nuevas formas de acceder al conocimiento y promueve el aprendizaje continuo a lo largo de la vida."
+  p3="Innovación: Estimula la generación de nuevas ideas y soluciones a través del intercambio de información y la colaboración."
+  color="black"
+  id="model-x"
+>
+  <div slot="footer" class="gap-x-6 flex mx-auto">
+    <a
+      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+      href="#model-s"
+    >
+      Volver atrás</a
+    >
+    <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="#powerwall"
+    >
+      Siguiente Sección</a
+    >
+  </div>
+
+  <img
+    slot="background"
+    alt="Model X"
+    class="h-full w-full object-cover object-center"
+    src="model-x.avif"
+    id="bg-image-modelx"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  var imageElement = document.querySelector("#bg-image-modelx") as HTMLImageElement;
+
+  if (isEdge()) {
+    imageElement.src = "model-x.webp";
+  } else {
+    imageElement.src = "model-x.avif";
+  }
+</script>
