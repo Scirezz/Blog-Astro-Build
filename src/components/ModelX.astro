@@ -31,7 +31,7 @@ import Section from "./Section.astro";
     slot="background"
     alt="Model X"
     class="h-full w-full object-cover object-center"
-    src="model-x.avif"
+    src="importance.avif"
     id="bg-image-modelx"
   />
 </Section>
@@ -51,8 +51,8 @@ import Section from "./Section.astro";
   var imageElement = document.querySelector("#bg-image-modelx") as HTMLImageElement;
 
   if (isEdge()) {
-    imageElement.src = "model-x.webp";
+    imageElement.src = "importance.webp";
   } else {
-    imageElement.src = "model-x.avif";
+    imageElement.src = "importance.avif";
   }
 </script>

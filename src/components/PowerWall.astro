@@ -28,7 +28,7 @@ import Section from "./Section.astro";
     slot="background"
     alt="Solar y Powerwall"
     class="h-full w-full object-cover object-center"
-    src="powerwall.avif"
+    src="evo.avif"
     id="bg-image-powerwall"
   />
 </Section>
@@ -48,8 +48,8 @@ import Section from "./Section.astro";
   var imageElement = document.querySelector("#bg-image-powerwall") as HTMLImageElement;
 
   if (isEdge()) {
-    imageElement.src = "powerwall.webp";
+    imageElement.src = "evo.webp";
   } else {
-    imageElement.src = "powerwall.avif";
+    imageElement.src = "evo.avif";
   }
 </script>
