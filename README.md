@@ -1,1 +1,2 @@
-![Captura-2023-05-15 001320](https://github.com/midudev/landing-tesla/assets/1561955/7aa648fc-0824-4ad1-9a36-7b2e4d272b53)
+## Primera página web utilizando Astro, utilizando como referencia el clón de Tesla realizado por Midudev ##
+![dc0fff99a3c936ac4e84a1cdbcee8885](https://github.com/Scirezz/Blog-Astro-Build/assets/116043397/abbbc4ec-f153-444c-b299-c7a29a9ceeef)
